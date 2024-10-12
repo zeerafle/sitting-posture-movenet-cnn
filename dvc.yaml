@@ -1,0 +1,6 @@
+stages:
+  download:
+    cmd: rye run kaggle datasets download -d zeerafle/sitting-posture -p data/original
+      --unzip
+    outs:
+    - data/original

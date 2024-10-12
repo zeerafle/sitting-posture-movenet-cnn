@@ -1,0 +1,11 @@
+schema: '2.0'
+stages:
+  download:
+    cmd: rye run kaggle datasets download -d zeerafle/sitting-posture -p data/original
+      --unzip
+    outs:
+    - path: data/original
+      hash: md5
+      md5: 65d4857e4ac34c2b103920397c758435.dir
+      size: 4736427572
+      nfiles: 1724
